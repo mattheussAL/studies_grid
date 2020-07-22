@@ -1,0 +1,71 @@
+/*  Grid diferente do flex necessita de outras classes para influência */
+
+/* Grid Container */
+
+body {
+  font-family: monospace;
+  font-size: 12px;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-template-columns {
+  /* columns 1: 200px 2: 200px 3: null 4: null .... */
+  /* modo simples */
+  grid-template-columns: 200px 200px;
+}
+
+.grid-template-columns-3 {
+  /* fr é uma unidade fracional */
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.subgrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-gap: 10px; 
+}
+
+.subgrid > div {
+  background: rgba(0, 0, 0, .3);
+}
+
+/* Estilos Gerais */
+
+.item {
+  margin: 5px;
+  background: tomato;
+  text-align:center;
+  font-size: 1.5em;
+}
+
+.grid {
+  max-width: 400px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* 100px é o valor total, ignora conteúdo, margem e etc. Respeita apenas o min-width do item. */
+.grid-template-columns-1 {
+  grid-template-columns: 100px 100px 100px 100px;
+}
+
+.grid-template-columns-3 {
+  /* minmax define o tamanho mininimo e maximo da coluna */
+  grid-template-columns: minmax(200px, 1fr) 1fr 1fr;
+}
+
+.grid-template-columns-5 {
+  /* O auto-fit deixa o trabalho mais responsivo */
+  grid-template-columns: repeat(auto-fit, 100px);
+}
+
+.grid-template-columns-7 {
+  grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+}
