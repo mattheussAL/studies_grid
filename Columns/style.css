@@ -1,7 +1,6 @@
 /*  Grid diferente do flex necessita de outras classes para influência */
 
-/* Grid Container */
-
+/* Estilos Gerais */
 body {
   font-family: monospace;
   font-size: 12px;
@@ -9,6 +8,23 @@ body {
 
 .grid {
   display: grid;
+}
+
+.item {
+  margin: 5px;
+  background: tomato;
+  text-align:center;
+  font-size: 1.5em;
+}
+
+.grid {
+  max-width: 400px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+}
+
+h1 {
+  text-align: center;
 }
 
 .grid-template-columns {
@@ -32,24 +48,6 @@ body {
   background: rgba(0, 0, 0, .3);
 }
 
-/* Estilos Gerais */
-
-.item {
-  margin: 5px;
-  background: tomato;
-  text-align:center;
-  font-size: 1.5em;
-}
-
-.grid {
-  max-width: 400px;
-  margin: 0 auto;
-  border: 1px solid #ccc;
-}
-
-h1 {
-  text-align: center;
-}
 
 /* 100px é o valor total, ignora conteúdo, margem e etc. Respeita apenas o min-width do item. */
 .grid-template-columns-1 {

@@ -1,0 +1,52 @@
+body {
+  font-family: monospace;
+  font-size: 12px;
+}
+
+.grid {
+  max-width: 400px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.item {
+  margin: 5px;
+
+  background-color: tomato;
+  text-align:center;
+  font-size: 1.5em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  background: #ff9921;
+}
+
+/* Trabalhando com as linhas */
+
+.grid-template-rows-1 {
+  grid-template-rows: 80px 100px 120px 140px;
+}
+
+.grid-template-rows-2 {
+  grid-template-rows: 100px 100px;
+}
+
+.grid-template-rows-3 {
+  grid-template-rows: 1fr 2fr 1fr 3fr
+}
+
+.grid-template-rows-columns {
+  grid-template-columns: 100px auto 100px;
+  grid-template-rows: 50px 100px auto
+
+}

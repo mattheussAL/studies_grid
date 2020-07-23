@@ -1,0 +1,23 @@
+body {
+  font-family: monospace;
+  font-size: 12px;
+}
+
+.item {
+  margin: 5px;
+  background: tomato;
+  text-align:center;
+  font-size: 1.5em;
+}
+
+.grid {
+  display: grid;
+
+  max-width: 400px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+}
+
+h1 {
+  text-align: center;
+}

@@ -1,0 +1,68 @@
+body {
+  font-family: monospace;
+  font-size: 12px;
+}
+
+.grid {
+  display: grid;
+}
+
+.item {
+  margin: 5px;
+  background: tomato;
+  text-align:center;
+  font-size: 1.5em;
+}
+
+.grid {
+  max-width: 400px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+}
+
+h1 {
+  text-align: center;
+}
+
+.grid {
+	display: grid;
+}
+
+.logo {
+	grid-area: logo;
+}
+
+.nav {
+	grid-area: nav;
+}
+
+.content {
+	grid-area: content;
+}
+
+.sidenav {
+	grid-area: sidenav;
+}
+
+.advert {
+	grid-area: advert;
+}
+
+.footer {
+	grid-area: footer;
+}
+
+
+.grid-template {
+  /* Linha / Coluna */
+  grid-template: 50px 1fr / 100px 1fr 120px;
+}
+
+.grid-template-1 {
+  /* Areas length Rows / Columns */
+  grid-template:
+    "logo nav nav" 100px
+    "sidenav content advert" 50px
+    "sidenav footer footer" 50px
+    / 100px 1fr 150px
+}
